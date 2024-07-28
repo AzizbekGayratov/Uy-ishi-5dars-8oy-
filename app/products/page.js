@@ -3,6 +3,9 @@ import React from "react";
 
 const page = async () => {
   const response = await fetch("https://fakestoreapi.com/products");
+  if (!response.ok) {
+    throw new Error("Product not found");
+  }
   const products = await response.json();
   console.log(products);
 
