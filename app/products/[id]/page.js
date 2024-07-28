@@ -6,11 +6,7 @@ const page = async ({ params }) => {
   const response = await fetch(
     `https://fakestoreapi.com/products/${params.id}`
   );
-  if (!response.ok) {
-    throw new Error("Product not found");
-  }
   const product = await response.json();
-
   return (
     <main className="flex flex-col items-center justify-between py-2">
       <div className="w-[1200px] mx-auto px-[5px]">
