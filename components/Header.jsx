@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import Logo from "/logo.png";
 
 const Header = () => {
   const pathname = usePathname();
@@ -11,7 +11,13 @@ const Header = () => {
       <div className="max-w-[1200px] mx-auto px-[5px]">
         <div className="flex justify-between items-center">
           <Link href="/">
-            <img src="/logo.png" alt="logo" className="h-[140px]" />
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={140}
+              height={140}
+              className="cursor-pointer"
+            />
           </Link>
           <nav>
             <ul className="flex gap-[55px]">

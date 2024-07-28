@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const NotFound = () => {
@@ -18,7 +19,7 @@ const NotFound = () => {
               </span>
             </div>
             <div className="flex flex-col">
-              <img src="/logo.png" alt="logo" />
+              <Image src="/logo.png" alt="logo" width={340} height={340} />
               <Link
                 href="/"
                 className="inline-block px-[30px] py-[16px] bg-[#5865E8] rounded-2xl text-center text-[#f3f3f3] font-semibold"

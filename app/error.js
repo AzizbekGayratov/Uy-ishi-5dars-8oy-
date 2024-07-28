@@ -11,7 +11,8 @@ export default function Error({ error, reset }) {
     <main className="flex flex-col items-center justify-between">
       <div className="max-w-[500px] mx-auto px-[5px] mt-[80px]">
         <h2 className="text-[80px] font-semibold leading-[72px] text-[#f4d3f3] mb-[30px]">
-          {error.message}
+          {/* {error.message} */}
+          Something went wrong!
         </h2>
         <button
           onClick={() => reset()}

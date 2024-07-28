@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { GiReturnArrow } from "react-icons/gi";
+import Image from "next/image";
 
 const page = async ({ params }) => {
   const response = await fetch(
@@ -13,7 +14,7 @@ const page = async ({ params }) => {
         <div>
           <div className="card card-side shadow-xl">
             <figure className="w-[700px]">
-              <img src={product.image} alt={product.title} />
+              <Image src={product.image} alt="Movie" width={700} height={700} />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-[40px] text-[#f3f3f3] leading-[48px] font-bold mb-[35px]">
