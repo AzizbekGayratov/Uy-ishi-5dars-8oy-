@@ -13,8 +13,8 @@ const page = async ({ params }) => {
       <div className="w-[1200px] mx-auto px-[5px]">
         <div>
           <div className="card card-side shadow-xl">
-            <figure className="w-[700px]">
-              <Image src={product.image} alt="Movie" width={700} height={700} />
+            <figure>
+              <Image src={product.image} alt="Movie" width={700} height={400} />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-[40px] text-[#f3f3f3] leading-[48px] font-bold mb-[35px]">
